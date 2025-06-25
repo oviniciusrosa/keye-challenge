@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏦 Keye Financial Table Project
 
-## Getting Started
+## 🔍 What is
 
-First, run the development server:
+This project is part of the Keye coding interview process. It's a Next.js application that demonstrates financial data visualization through an interactive table component. The application showcases:
+
+- 🛠️ TypeScript integration
+- 🔄 Data transformation utilities
+- 📊 Custom financial table components
+- 🧹 Clean, maintainable code structure
+
+You can access the explanation on YouTube [here](https://www.youtube.com/watch?v=X2H8K6O2J7g).
+
+## ⚙️ How it works
+
+The application consists of several key components:
+
+1. **💼 Financial Table**: The main component (`financial-table.tsx`) that renders and manages the financial data display
+2. **🔄 Data Transformation**: Utilities (`transform-table-data.ts`) that process raw financial data into a format suitable for display
+3. **📝 Type Definitions**: Strongly typed interfaces (`@types.tsx`) for financial data and table properties
+4. **🎨 UI Components**: Reusable table components (`table.tsx`) that provide the foundation for the financial table
+
+The application follows modern React/Next.js best practices with proper separation of concerns between data, presentation, and business logic.
+
+## 🚀 How to run
+
+To set up and run the project locally:
+
+1. **📋 Prerequisites**:
+
+   - Node.js (v18 or later recommended)
+   - pnpm (installed globally)
+
+2. **📦 Install dependencies**:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **⚡ Run development server**:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. **🌐 Open in browser**:
+   The application will be available at:
 
-## Learn More
+```
+http://localhost:3000
+```
 
-To learn more about Next.js, take a look at the following resources:
+For production builds:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+pnpm build
+pnpm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🧪 Testing
 
-## Deploy on Vercel
+The project includes ESLint for code quality checks:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+pnpm lint
+```
